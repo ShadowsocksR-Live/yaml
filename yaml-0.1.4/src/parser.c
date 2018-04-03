@@ -534,7 +534,7 @@ yaml_parser_parse_node(yaml_parser_t *parser, yaml_event_t *event,
     yaml_char_t *tag_handle = NULL;
     yaml_char_t *tag_suffix = NULL;
     yaml_char_t *tag = NULL;
-    yaml_mark_t start_mark, end_mark, tag_mark;
+    yaml_mark_t start_mark, end_mark, tag_mark = { 0 };
     int implicit;
 
     token = PEEK_TOKEN(parser);
