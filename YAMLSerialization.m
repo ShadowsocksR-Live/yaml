@@ -8,7 +8,7 @@
 //
 
 #import "YAMLSerialization.h"
-#import "yaml.h"
+#import "yaml_private.h"
 
 NSString *const YAMLErrorDomain = @"com.github.mirek.yaml";
 
